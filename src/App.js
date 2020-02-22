@@ -3,7 +3,7 @@ import './App.css';
 import HeaderBlock from './components/HeaderBlock/index';
 import Sidebar from './components/Sidebar/index';
 import Profile from './components/Profile/index';
-import Messages from './components/Messages';
+import Dialogs from './components/Dialogs';
 import { BrowserRouter, Route } from 'react-router-dom';
 
 function App() {
@@ -13,8 +13,13 @@ function App() {
         <HeaderBlock />
         <Sidebar />
         <div className='content'>
+          <Route exact path='/'>
+            <div className='welcome'>
+              <img src='https://pngimg.com/uploads/welcome/welcome_PNG60.png' alt='welcome' />
+            </div>
+          </Route>
           <Route path='/profile' component={Profile} />
-          <Route path='/messages' component={Messages} />
+          <Route path='/dialogs' component={Dialogs} />
         </div>
       </div>
     </BrowserRouter>

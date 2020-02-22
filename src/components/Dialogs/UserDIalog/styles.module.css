@@ -1,0 +1,13 @@
+.unUser {
+    color: white;
+    text-decoration: none;
+}
+
+.unUser :hover {
+    color: black;
+    font-weight: bold;
+}
+
+.acUser {
+    font-weight: bold;
+}
